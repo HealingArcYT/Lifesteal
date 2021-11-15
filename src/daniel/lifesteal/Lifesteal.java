@@ -40,10 +40,8 @@ public class Lifesteal extends JavaPlugin {
     public void setPlayerHearts(Player player, Integer hearts) {
         // sets the max health
 
-        //this.getServer().broadcast("PlayerHeart neu", "whatever");
-        //player.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue((double) hearts * 2);
-
-        player.setHealth((double) hearts*2);
+        this.getServer().broadcast("PlayerHeart neu", "whatever");
+        player.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue((double) hearts * 2);
 
         //getLogger().info("Player " + player.getName() + " hat nun " + player.getMaxHealth() + "Herzen");
     }
